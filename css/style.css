@@ -1,0 +1,87 @@
+/*@import url(reset.css);
+*/
+html, body{
+	margin: 0;
+	font-size: 16px;
+}
+
+ul, li{
+	margin: 0;
+	padding: 0;
+	list-style-type: none; /* сбрасываем оформление списка*/
+}
+
+/*ul li{
+	padding: 20px;
+}*/
+
+a{
+	color: inherit;
+	text-decoration: none;
+}
+
+.clearfix::after{ /*  псевдо - добавляем НИЧЕГО в конец блока родителя*/
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.wrapper{
+	max-width: 1024px;
+	padding: 0 30px;
+	margin: 0 auto;
+}
+
+nav{
+	background: #eee;
+}
+
+nav .wrapper{
+	position: relative;
+	
+}
+
+.menu{
+
+}
+
+.menu li{
+	float: left;
+}
+
+.menu li a{
+	display: inline-block;
+	padding: 10px 15px;
+}
+
+.menuToggle{
+	padding: 10px 15px;
+	display: none;
+	
+}
+
+#menuCheck{ /* скрываем поле */
+			display: none;
+			
+		}
+
+@media screen and (max-width: 560px) {
+	.menu{
+		display: none;
+		position: absolute;
+		background: #eee;
+		}
+		.menuToggle{
+		display: inline-block;
+		cursor: pointer;
+		}
+	.menu li{
+	float: none;
+
+		}
+		#menuCheck:checked + .menu{
+			display: block;
+			
+		}
+
+}

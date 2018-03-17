@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Адаптивное меню на CSS</title>
+<link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+	<nav>
+		<div class="wrapper"> <!-- Обёртка меню -->
+		<label class="menuToggle" for="menuCheck">Меню</label> <!-- Делаем кликабельную зону -->
+		<input type="checkbox" id="menuCheck"> <!-- с помощью поля фиксируем ФАКТ клика по знаку меню-->
+			<ul class="menu clearfix"> <!-- почти стандарт для отсечки плавающих элементов меню -->
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">О компании</a></li>
+				<li><a href="#">Продукты</a></li>
+				<li><a href="#">Услуги</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</div>
+	</nav>
+	<section>
+		<div class="wrapper">
+			<p>Другой контент</p> <!-- обрати внимание как будет вести себя контент при разворачивании меню -->
+		</div>
+	</section>
+
+</body>
+</html>
